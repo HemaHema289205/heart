@@ -1,7 +1,8 @@
-
 import streamlit as st
 import joblib
+
 m=joblib.load('hdp.joblib')
+
 st.title('heart diseases App')
 age=st.number_input('enter your age')
 cigsPerDay=st.number_input('enter your cigsperday')
