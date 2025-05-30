@@ -14,7 +14,7 @@ heartRate=st.number_input('enter your heartRate')
 glucose=st.number_input('enter your glucose')
 if st.button('predict'):
     prediction =m.predict([[age,cigsPerDay,totChol,sysBP,diaBP,BMI,heartRate,glucose]])
-    if prediction == '0':
+    if prediction == 0:
         st.write('after 10 years you have no any heart diseases')
     else:
         st.write('after 10 years you may have any heart diseases')
